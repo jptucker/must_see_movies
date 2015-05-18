@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root "movies#index"
+
   # Routes for the Director resource:
   # CREATE
   get "/directors/new", :controller => "directors", :action => "new"

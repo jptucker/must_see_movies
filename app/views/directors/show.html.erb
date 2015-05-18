@@ -22,6 +22,12 @@
               <dt>Name</dt>
               <dd><%= @director.name %></dd>
 
+              <ul class="list-group">
+                <% @director.movies.each do |movie| %>
+                <li class="list-group-item"><%= movie.title %></li>
+                <% end %>
+              </ul>
+
             </dl>
             <div class="btn-group btn-group-justified">
               <a href="/directors" class="btn btn-primary">
